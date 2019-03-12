@@ -50,10 +50,14 @@ public class FlowerStore {
     }
 
 
-    public void printFlowers() {
+    public static void printFlowers(Flower[] bouquet) {
         for (Flower flower : bouquet) {
             System.out.print(flower.getClass().getSimpleName() + " ");
         }
         System.out.println();
+    }
+
+    public Flower[] getBouquet() {
+        return bouquet;
     }
 }

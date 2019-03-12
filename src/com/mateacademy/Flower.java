@@ -1,5 +1,7 @@
 package com.mateacademy;
 
-public abstract class Flower {
+import java.io.Serializable;
+
+public abstract class Flower implements Serializable {
 
 }
