@@ -1,5 +1,12 @@
 package com.mateacademy;
 
 public class Chamomile extends Flower {
-    public static final int PRICE = 70;
+    public Chamomile(int price) {
+        super(price);
+    }
+
+    @Override
+    public String toString() {
+        return "Chamomile";
+    }
 }

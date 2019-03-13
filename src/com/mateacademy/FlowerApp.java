@@ -1,16 +1,18 @@
 package com.mateacademy;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 public class FlowerApp {
     public static void main(String[] args) {
         FlowerStore store = new FlowerStore();
         store.sell(5, 3, 1);
-        FlowerStore.printFlowers(store.getBouquet());
-        System.out.println(FlowerStore.getWallet());
+        System.out.println(Arrays.toString(store.getBouquet()));
+        System.out.println(FlowerStore.getBalance());
         store.sellSequence(5, 3, 1);
-        FlowerStore.printFlowers(store.getBouquet());
-        System.out.println(FlowerStore.getWallet());
+        System.out.println(Arrays.toString(store.getBouquet()));
+        System.out.println(FlowerStore.getBalance());
+
 
         try {
             FlowersSaver.save(store.getBouquet(), "C:/Users/taureN/Desktop/test.txt");
@@ -24,6 +26,7 @@ public class FlowerApp {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        FlowerStore.printFlowers(flowers);
+        System.out.println("Loaded bouquet: ");
+        System.out.println(Arrays.toString(flowers));
     }
 }

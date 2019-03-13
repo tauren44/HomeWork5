@@ -1,5 +1,13 @@
 package com.mateacademy;
 
 public class Tulip extends Flower {
-    public static final int PRICE = 45;
+
+    public Tulip(int price) {
+        super(price);
+    }
+
+    @Override
+    public String toString() {
+        return "Tulip";
+    }
 }
