@@ -55,7 +55,6 @@ public class FlowerStore {
         }
     }
 
-
     public Flower[] getBouquet() {
         return bouquet;
     }
